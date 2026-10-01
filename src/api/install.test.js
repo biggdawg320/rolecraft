@@ -285,13 +285,7 @@ describe('api install', () => {
 
     assert.ok(
       existsSync(
-        join(
-          projectDir,
-          '.agents',
-          'skills',
-          'cwd-mismatch-skill',
-          'SKILL.md',
-        ),
+        join(projectDir, '.agents', 'skills', 'cwd-mismatch-skill', 'SKILL.md'),
       ),
       'skill should install under options.cwd, not process.cwd()',
     )
